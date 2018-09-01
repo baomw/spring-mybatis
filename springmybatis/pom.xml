@@ -26,6 +26,7 @@
   <name>spring-mybatis</name>
   <modules>
     <module>spring-mybatis-basic</module>
+    <module>spring-mybaits-xml</module>
   </modules>
   <groupId>spring-mybatis</groupId>
   <artifactId>spring-mybatis</artifactId>
