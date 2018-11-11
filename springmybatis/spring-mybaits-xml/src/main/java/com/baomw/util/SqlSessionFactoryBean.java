@@ -19,13 +19,13 @@ public class SqlSessionFactoryBean {
 
     private static SqlSessionFactory sqlSessionFactory ;
 
-    public SqlSession getSqlSession() throws IOException {
-        //try {
+    public SqlSession getSqlSession(){
+        try {
             Reader reader = Resources.getResourceAsReader("mybatis-config.xml");
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
             reader.close();
-       // }catch (IOException e){
-       // }
+        }catch (IOException e){
+        }
         return sqlSessionFactory.openSession();
     }
 }

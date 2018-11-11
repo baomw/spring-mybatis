@@ -16,7 +16,7 @@ public class test {
 
     public static void main(String[] args) {
         CityService service = new CityService();
-        List<CityDomain> list = service.selectCityById("1");
+        List<CityDomain> list = service.selectCityById("6");
         for (CityDomain domain:list){
             System.out.println(domain.getId());
             System.out.println(domain.getName());

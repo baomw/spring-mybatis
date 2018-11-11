@@ -25,7 +25,7 @@ public class CityService {
         try {
             sqlSession = sqlSessionFactoryBean.getSqlSession();
             list = sqlSession.selectList("com.baomw.dao.CityMapper.selectCityById",id);
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return list;
